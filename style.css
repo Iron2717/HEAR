@@ -154,3 +154,10 @@ textarea:focus {
   color: var(--accent);
   min-height: 1.2em;
 }
+
+.disclaimer {
+  margin: 12px 0 0;
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  text-align: center;
+}
