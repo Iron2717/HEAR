@@ -24,8 +24,8 @@ body {
 .app {
   max-width: 960px;
   margin: 0 auto;
-  padding: max(20px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right))
-    max(32px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+  padding: max(16px, env(safe-area-inset-top)) max(14px, env(safe-area-inset-right))
+    max(32px, env(safe-area-inset-bottom)) max(14px, env(safe-area-inset-left));
 }
 
 .app-header {
@@ -53,10 +53,7 @@ body {
 }
 
 .editor {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 16px;
+  padding: 0;
   max-width: 700px;
   margin: 0 auto;
 }
@@ -149,7 +146,6 @@ textarea:focus {
 .btn:not(.primary):not(.danger) {
   background: var(--surface-alt);
   color: var(--text);
-  border: 1px solid var(--border);
 }
 
 .btn:not(.primary):not(.danger):hover {
