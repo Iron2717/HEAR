@@ -24,26 +24,18 @@ body {
 .app {
   max-width: 960px;
   margin: 0 auto;
-  padding: max(16px, env(safe-area-inset-top)) max(4px, env(safe-area-inset-right))
-    max(32px, env(safe-area-inset-bottom)) max(4px, env(safe-area-inset-left));
+  padding: max(16px, env(safe-area-inset-top)) max(2px, env(safe-area-inset-right))
+    max(32px, env(safe-area-inset-bottom)) max(2px, env(safe-area-inset-left));
 }
 
 .app-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
+  text-align: center;
   margin-bottom: 20px;
 }
 
 .app-header h1 {
   font-size: 1.3rem;
   margin: 0;
-}
-
-.app-header .btn {
-  width: auto;
-  flex-shrink: 0;
 }
 
 .layout {
