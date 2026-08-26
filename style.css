@@ -24,8 +24,8 @@ body {
 .app {
   max-width: 960px;
   margin: 0 auto;
-  padding: max(16px, env(safe-area-inset-top)) max(14px, env(safe-area-inset-right))
-    max(32px, env(safe-area-inset-bottom)) max(14px, env(safe-area-inset-left));
+  padding: max(16px, env(safe-area-inset-top)) max(4px, env(safe-area-inset-right))
+    max(32px, env(safe-area-inset-bottom)) max(4px, env(safe-area-inset-left));
 }
 
 .app-header {
