@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HEAR Journal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header class="app-header">
+    <h1>HEAR Journal</h1>
+    <button id="newEntryBtn" class="btn">Clear</button>
+  </header>
+
+  <div class="layout">
+    <main class="editor" id="editor">
+      <div class="field-group">
+        <label for="date">Date</label>
+        <input type="date" id="date">
+      </div>
+
+      <div class="field-group">
+        <label for="reference">Scripture Reference</label>
+        <input type="text" id="reference" placeholder="e.g. John 3:16">
+      </div>
+
+      <div class="field-group">
+        <label for="highlight">H — Highlight</label>
+        <p class="hint">What verse or passage stood out to you?</p>
+        <textarea id="highlight" rows="3" placeholder="Write the verse or passage that caught your attention..."></textarea>
+      </div>
+
+      <div class="field-group">
+        <label for="explain">E — Explain</label>
+        <p class="hint">What does this passage mean?</p>
+        <textarea id="explain" rows="3" placeholder="Explain the context and meaning..."></textarea>
+      </div>
+
+      <div class="field-group">
+        <label for="apply">A — Apply</label>
+        <p class="hint">How does this apply to your life?</p>
+        <textarea id="apply" rows="3" placeholder="How can you apply this to your life today..."></textarea>
+      </div>
+
+      <div class="field-group">
+        <label for="respond">R — Respond</label>
+        <p class="hint">Write a short prayer or response.</p>
+        <textarea id="respond" rows="3" placeholder="Write your prayer or response..."></textarea>
+      </div>
+
+      <div class="actions">
+        <button id="copyBtn" class="btn primary">Copy All</button>
+        <button id="shareBtn" class="btn">Send to Notes</button>
+      </div>
+      <p id="copyStatus" class="copy-status" aria-live="polite"></p>
+    </main>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
